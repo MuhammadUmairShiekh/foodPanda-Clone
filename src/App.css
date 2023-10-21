@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: right;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.491);
+
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  list-style: none;
+  margin: 1.1rem 2rem 0rem 1.1rem;
+  cursor: pointer;
+
+
+}
+
+.nav ul .logo img {
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+  width: 13rem;
+}
+
+.nav ul .list {
+  /* text-align: center; */
+  margin: 1.6rem 4rem 1rem 0rem;
+}
+
+.nav ul .list span {
+  /* background-color: red; */
+  position: absolute;
+  top: 1.6rem;
+  right: 8rem;
+}
+
+.nav ul li button {
+  padding: 9px 20px 9px 20px;
+  transition: 0.3s ease-in-out;
+  border-radius: 6px;
+  outline: #D70F64;
+  border: 1px solid #D70F64;
+
+}
+
+.nav ul .signUpBtn button {
+  background-color: #D70F64;
+  border-radius: 6px;
   color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 1.3rem;
+  right: 13rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav ul .loginBtn button {
+  background-color: #fff;
+  border-radius: 6px;
+  color: #D70F64;
+  font-weight: 600;
+  position: absolute;
+  top: 1.3rem;
+  right: 21rem;
+}
+.nav ul li:hover button {
+  transform: scale(1.1);
+  cursor: pointer;
+
+
+}
+.container1{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.container1 .main img{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 41rem;
+}
+
+.container1 .main1{ 
+  position: absolute;
+  top: 17rem;
+  left: 2rem;
 }
