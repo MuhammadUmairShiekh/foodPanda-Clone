@@ -45,8 +45,8 @@ function Body() {
             </div >
 
             <div className="container3" >
-                <div className="card">
-                    <div className="card1">
+                <div className="card01">
+                    <div className="card11">
                         <p>
                             List your restaurant or shop on foodpanda
                         </p>
