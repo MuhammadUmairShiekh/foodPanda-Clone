@@ -1,0 +1,139 @@
+.logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    text-align: center;
+    color: #D70F64;
+    font-weight: 700;
+
+}
+.logo1{
+    position: absolute;
+    top: -2rem;
+}
+.form {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* background: rgb(15, 23, 36); */
+    background: #fff;
+    padding: 1.5rem 1rem;
+    width: 390px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 3rem auto  3rem;
+
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* background: rgb(15, 23, 36); */
+    background: #fff;
+    padding: 1.5rem 1rem;
+    width: 390px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: auto;
+}
+
+.form input {
+    outline: none;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.form select {
+    outline: none;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.form input:focus {
+    border: 1.8px solid #D70F64;
+}
+
+.form .login {
+    outline: none;
+    border: none;
+    background: #D70F64;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    /* margin-top: 2rem; */
+    font-size: 1.1rem;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+.form .login1 {
+    outline: none;
+    border: none;
+    background: #F4B400;
+    text-decoration: none;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    /* margin-top: 2rem; */
+    font-size: 1.1rem;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.form .login:hover {
+    background: #d70f6292;
+    cursor: pointer;
+}
+.form .login1:hover {
+    background: #f4b300b0;
+    cursor: pointer;
+}
+
+
+.form .a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 0.8rem;
+    /* margin-top: 1rem; */
+    color: #1877f2;
+}
+
+.form hr {
+    background: #f7f7f7;
+
+    margin: 1.1rem;
+}
+
+.form .create-account {
+    outline: none;
+    border: none;
+    background: #06b909;
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.form .create-account:hover {
+    background: #03ad06cb;
+    cursor: pointer;
+}

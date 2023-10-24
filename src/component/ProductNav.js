@@ -11,7 +11,8 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2'
 
-function Navber() {
+
+function ProductNav() {
     const [log, setLog] = useState(false)
     const navigate = useNavigate()
     const [user, setUser] = useState()
@@ -57,6 +58,9 @@ function Navber() {
                             <img src={foodPanda} />
                         </NavLink>
                     </li>
+                    <li>
+                        <p className="location" >Location:</p>
+                    </li>
                     <li className="signUpBtn">
                         <i>{user}</i>
 
@@ -83,13 +87,13 @@ function Navber() {
                         <img src={ShopingBag} width={25} />
                     </li>
                 </ul>
-                <Outlet />
+               
             </div>
-            <Body />
+            
             {/* <SentData /> */}
 
         </>
     )
 }
 
-export default Navber
+export default ProductNav

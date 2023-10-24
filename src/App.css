@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .nav {
@@ -9,7 +10,12 @@
   justify-content: right;
   position: relative;
   background-color: #fff;
-  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.491);
+  /* box-shadow: 0px 0px 19px 10px rgba(30, 30, 30, 0.902); */
+  box-shadow: 0px 0px 30px 1px rgba(54, 53, 53, 0.469);
+  z-index: 1;
+  position: sticky;
+  top: 0;
+
 
 }
 
@@ -23,6 +29,17 @@
   cursor: pointer;
 
 
+}
+
+.nav ul .user img {
+  position: absolute;
+  top: 1.2rem;
+  left: 0.5rem;
+  width: 1.9rem;
+  background-color: #D70F64;
+  padding: 0.4rem;
+  border-radius: 50%;
+  display: none;
 }
 
 .nav ul .logo img {
@@ -53,25 +70,32 @@
 
 }
 
-.nav ul .signUpBtn button {
-  background-color: #D70F64;
-  border-radius: 6px;
-  color: white;
-  font-weight: 600;
-  position: absolute;
-  top: 1.3rem;
-  right: 13rem;
-
-}
-
-.nav ul .loginBtn button {
-  background-color: #fff;
+.nav ul .signUpBtn {
+  /* background-color: #D70F64; */
   border-radius: 6px;
   color: #D70F64;
   font-weight: 600;
   position: absolute;
+  top: 0.5rem;
+  right: 16rem;
+
+}
+
+.nav ul .loginBtn button {
+  background-color: #D70F64;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
   top: 1.3rem;
-  right: 21rem;
+  right: 12rem;
+}
+.nav ul .location{
+  position: absolute;
+  top: 1.5rem;
+  font-weight: 600;
+  color: #D70F64;
+  left: 35rem;
 }
 .nav ul li:hover button {
   transform: scale(1.1);
@@ -79,26 +103,313 @@
 
 
 }
-.container1{
+
+.container1 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   overflow: hidden;
   position: relative;
- 
+  background-color: #F7F7F7;
+
 }
 
 
-.container1 .main img{
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-left: 41rem;
+.container1 .main img {
+  width: 73%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 46rem;
 }
 
-.container1 .main1{ 
+.container1 .main1 {
   position: absolute;
-  top: 17rem;
-  left: 2rem;
+  top: 10rem;
+  left: 4rem;
 }
+
+.container1 .main1 p {
+  /* background-color: red; */
+  color: rgba(31, 31, 31, 0.951);
+  font-size: 2.7rem;
+  width: 70%;
+}
+
+.container1 .main1 .mainInput {
+  background-color: #fff;
+  width: 80%;
+  box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.415);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+
+}
+
+.container1 .main1 .mainInput .mainInput1 {
+  width: 100%;
+}
+
+.container1 .main1 .mainInput .mainInput1 input {
+  width: 82%;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.container1 .main1 .mainInput .mainInput1 button {
+  background-color: #D70F64;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  outline: #D70F64;
+  border: 2px solid #D70F64;
+  margin-left: 1.2rem;
+  /* position: absolute;
+  top: 8.4rem;
+  right: 18rem; */
+  padding: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.container1 .main1 .mainInput .mainInput1 button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.container2 {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container2 .hero p {
+  margin: 5rem 0 2rem 4rem;
+  font-size: 2rem;
+
+}
+
+.container2 .hero1 {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.container2 .hero1 img {
+  width: 100%;
+  transform: scale(1.1);
+
+
+}
+
+.container3 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.container3 .card {
+  background-color: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.415);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  width: 43%;
+  height: auto;
+  position: absolute;
+  top: -10rem;
+  left: 5rem;
+  margin: 6px;
+
+}
+
+.container3 .card1 p {
+  width: 100%;
+  margin: 1.9rem 1rem 1rem 0.1rem;
+}
+
+.container3 .card1>p:first-child {
+  font-size: 1.6rem;
+  font-weight: 400;
+
+}
+
+.container3 .card1 button {
+  background-color: #D70F64;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  outline: #D70F64;
+  border: 2px solid #D70F64;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.container3 .card1 button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.container4 {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container4 .location p {
+  margin: 1rem 0 1rem 5rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.container4 .cardList {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 10px;
+  border-radius: 2rem;
+
+}
+
+.container5 {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+
+.container5 .mobile p {
+  margin: 5rem 0 2rem 4rem;
+  font-size: 2rem;
+}
+.container5 .mobilePic img{
+  width: 45%;
+  height: 76vh;
+  position: absolute;
+  top: 6rem;
+  right: 0.2rem;
+}
+
+.container5 .mobile1{
+  background-color: #D70F64;
+  margin: 3rem;
+  width: 94%;
+  height: 49vh;
+  border-radius: 0.6rem;
+  color: #fff;
+  position: relative;
+  
+}
+.container5 .mobile1 .app{
+  position: absolute;
+  top: 14rem;
+  left: 3rem;
+}
+.container5 .mobile1 .app button{
+  padding: 15px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  
+  
+}
+
+.container5 .mobile1 img{
+  width: 15%;
+  height: 15%;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+    
+}
+.container5 .mobile1> p:first-child{
+  padding-top: 2rem;
+  
+}
+.container5 .mobile1 .qrcode{
+  display: flex;
+  width: 60%;
+  margin: 2rem 0rem 0rem 3.8rem;
+}
+.container5 .mobile1 .qrcode p{
+  font-size: 1rem;
+  margin: 10px 10px 0px 20px;
+  width: 60%; 
+  line-height: 1.8rem;
+
+}
+
+.container6 {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container6 .office p {
+  margin: 0.1rem 0 4rem 4rem;
+  font-size: 2rem;
+
+}
+
+.container6 .office1 {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.container6 .office1 img {
+  width: 100%;
+  transform: scale(1.1);
+}
+.container7 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.container7 .card2 {
+  background-color: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.415);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  width: 43%;
+  height: auto;
+  position: absolute;
+  top: -7rem;
+  left: 5rem;
+  margin: 6px;
+
+}
+
+.container7 .card3 p {
+  width: 100%;
+  margin: 1.9rem 1rem 1rem 0.1rem;
+}
+
+.container7 .card3>p:first-child {
+  font-size: 1.6rem;
+  font-weight: 400;
+
+}
+
+.container7 .card3 button {
+  background-color: #D70F64;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  outline: #D70F64;
+  border: 2px solid #D70F64;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.container7 .card3 button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
