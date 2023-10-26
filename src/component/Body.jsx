@@ -14,24 +14,27 @@ import office from "../Images/home-corporate-pk.jpg"
 import Card from "./Card";
 import './Responsive.css';
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 function Body() {
     return (
         <>
-        
+
             <div className="container1" >
-                <div className="main">
-                    <img src={refresh} />
-                </div>
-                <div className="main1">
-                    <p>It's the food and groceries you love, delivered</p>
-                    <div className="mainInput">
-                        <div className="mainInput1">
-                            <input type="text" placeholder="Entere Your Ful address" />
-                            <button>Find Food</button>
-                        </div>
+                <div className="conta2">
+                    <div className="main">
+                        <img src={refresh} />
+                    </div>
+                    <div className="main1">
+                        <p>It's the food and groceries you love, delivered</p>
                     </div>
                 </div>
+                {/* <div className="mainInput">
+                    <div className="mainInput1">
+                        <input type="text" placeholder="Entere Your Ful address" />
+                        <button>Find Food</button>
+                    </div>
+                </div> */}
             </div>
             <div className="container2">
                 <div className="hero">
@@ -77,7 +80,7 @@ function Body() {
                     </div>
                 </div>
                 <div className="cardList">
-                  <NavLink to={"/city"}> <Card image={karachi} button={"karachi"} /></NavLink>
+                    <NavLink to={"/city"}> <Card image={karachi} button={"karachi"} /></NavLink>
                     <Card image={Hyderabad} button={"Hyderabad"} />
                     <Card image={Peshawar} button={"Peshawar"} />
                 </div>
@@ -142,15 +145,15 @@ function Body() {
 
                             </p>
                         </div>
-                       <div>
-                       
+                        <div>
+
                             <button>Get Started</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-
+                <Footer />
         </>
     )
 }

@@ -7,6 +7,9 @@
 .cardlist {
     position: relative;
     overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -266,3 +269,24 @@
 }
 
 /* <<<<<<<<<<<Product Card End>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<Footer>>>>>>>>>>>>> */
+
+.footer {
+    background-color: #D70F64;
+    color: #c4e90d;
+    width: a;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.footer img {
+    position: absolute;
+    top: -1.2rem;
+    width: 12%;
+    filter: invert(1);
+}

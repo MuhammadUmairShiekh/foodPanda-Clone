@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 
+}
+
+body{
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+  
 }
 
 .nav {
@@ -29,6 +36,7 @@
   cursor: pointer;
 
 
+
 }
 
 .nav ul .user img {
@@ -45,19 +53,21 @@
 .nav ul .logo img {
   position: absolute;
   top: -2rem;
-  left: 2rem;
+  left: -1rem;
   width: 13rem;
 }
 
 .nav ul .list {
-  /* text-align: center; */
-  margin: 1.6rem 4rem 1rem 0rem;
+   margin: 1.6rem 4rem 1rem 0rem;
+}
+.nav ul .list1 {
+  margin: 1.7rem 4rem 1rem 0rem;
 }
 
-.nav ul .list span {
+.nav ul .list1 span {
   /* background-color: red; */
   position: absolute;
-  top: 1.6rem;
+  top: 1.8rem;
   right: 8rem;
 }
 
@@ -104,73 +114,133 @@
 
 }
 
+@media screen and (max-width:850px) {
+  .nav ul .signUpBtn {
+    display: none;
+  }
+      
+  .nav ul .user img {
+    position: absolute;
+    top: 1.2rem;
+    left: 0.5rem;
+    width: 1.9rem;
+    background-color: #D70F64;
+    padding: 0.4rem;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  .nav ul .logo img {
+    width: 10rem;
+    position: absolute;
+    top: -0.9rem;
+
+    
+    
+   
+  }
+  .nav ul .loginBtn button {
+    position: absolute;
+    top: 1.3rem;
+    right: 3rem;
+  }
+  .nav ul .list1 span  {
+    display: none;
+ }
+ .nav ul .list1 img{
+    display: none
+ }
+ .nav ul .list{
+  margin: 1.6rem 0.3rem 1rem 0rem;
+
+ }
+}
+
+
 .container1 {
-  display: flex;
+  /* display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-between; */
+  /* flex-wrap: wrap; */
   overflow: hidden;
   position: relative;
   background-color: #F7F7F7;
 
 }
+.container1 .conta2{
+  display: flex;
+  justify-items: flex-end;
+   flex-direction: row-reverse; 
+  align-items: center;
+  
+  
 
+}
 
 .container1 .main img {
-  width: 73%;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-left: 55rem;
-}
+  justify-self: end;
+  align-items: flex-end; 
+  margin-left: 22rem;
+  }
 
 .container1 .main1 {
-  position: absolute;
-  top: 10rem;
-  left: 4rem;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+flex-wrap: wrap;
 }
 
-.container1 .main1 p {
-  /* background-color: red; */
+.container1 .main1 p { 
   color: rgba(31, 31, 31, 0.951);
   font-size: 2.7rem;
-  width: 70%;
-}
-
-.container1 .main1 .mainInput {
-  background-color: #fff;
-  width: 80%;
-  box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.415);
-  padding: 1.2rem;
-  border-radius: 10px;
-  margin-top: 2rem;
-
-}
-
-.container1 .main1 .mainInput .mainInput1 {
   width: 100%;
+  margin-right: -3rem;
 }
 
-.container1 .main1 .mainInput .mainInput1 input {
-  width: 82%;
+.container1  .mainInput {
+  background-color: #ffffff6f;
+  width: 50%;
+  box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.347);
+  padding: 0.9rem;
+  border-radius: 10px;
+  
+
+}
+
+.container1 .mainInput .mainInput1 {
+  width: 100%;
+  display: flex;
+  
+  
+}
+
+.container1  .mainInput .mainInput1 input {
+  width: 100%;
   outline: none;
   border: 1px solid lightgray;
   padding: 16px;
   border-radius: 5px;
+  
 }
 
-.container1 .main1 .mainInput .mainInput1 button {
+.container1 .mainInput .mainInput1 button {
   background-color: #D70F64;
   border-radius: 6px;
   color: white;
   font-weight: 600;
   outline: #D70F64;
   border: 2px solid #D70F64;
-  margin-left: 1.2rem;
+  /* margin-left: 1.9rem; */
   /* position: absolute;
   top: 8.4rem;
   right: 18rem; */
   padding: 14px;
   transition: 0.3s ease-in-out;
+  width: 30%;
+  
 }
 
 .container1 .main1 .mainInput .mainInput1 button:hover {
@@ -184,11 +254,11 @@
   height: 100vh;
 }
 
-.container2 .hero p {
-  margin: 5rem 0 2rem 4rem;
-  font-size: 2rem;
+  .container2 .hero p {
+    margin: 5rem 0 2rem 4rem;
+    font-size: 2rem;
 
-}
+  }
 
 .container2 .hero1 {
   width: 100%;
@@ -198,6 +268,7 @@
 
 .container2 .hero1 img {
   width: 100%;
+  /* height: 90vh; */
   transform: scale(1.1);
 
 
@@ -252,8 +323,9 @@
 
 .container4 {
   width: 100%;
-  overflow: hidden;
-  height: 100vh;
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .container4 .location p {
@@ -265,7 +337,10 @@
 .container4 .cardList {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  height: auto;
+  overflow: hidden;
   flex-wrap: wrap;
   margin: 10px;
   border-radius: 2rem;
@@ -273,12 +348,13 @@
 }
 
 .container5 {
+  /* margin-top: 20re; */
   width: 100%;
-  overflow: hidden;
-  height: 100vh;
+  /* height: auto; */
   position: relative;
+  overflow: hidden;
+ 
 }
-
 
 .container5 .mobile p {
   margin: 5rem 0 2rem 4rem;
@@ -347,7 +423,7 @@
 .container6 {
   width: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: auto;
 }
 
 .container6 .office p {

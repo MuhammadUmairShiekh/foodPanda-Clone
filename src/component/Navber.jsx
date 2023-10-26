@@ -22,14 +22,14 @@ function Navber() {
                 setLog(true)
 
             } else {
-                
-                
+
+
             }
         });
 
     }, [])
 
-    
+
     const handleSignOut = async () => {
         try {
             await signOut(auth)
@@ -45,13 +45,14 @@ function Navber() {
     }
     return (
         <>
+        
             <div className="nav">
                 <ul >
-                    <li className="user" >
-                        <NavLink>
+                    {/* <li className="user" >
+                        <NavLink to={"/signIn"}>
                             <img src={User} width={20} />
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li className="logo" >
                         <NavLink>
                             <img src={foodPanda} />
@@ -61,11 +62,7 @@ function Navber() {
                         <i>{user}</i>
 
                     </li>
-                    {/* <li className="signUpBtn">
-                        <NavLink to={"/signUp"}>
-                            <button>SignUp</button>
-                        </NavLink>
-                    </li> */}
+
                     {!log ? <li className="loginBtn">
                         <NavLink to={"/signIn"}>
                             <button>Log in</button>
@@ -76,7 +73,7 @@ function Navber() {
                             <button onClick={handleSignOut} >Logout</button>
 
                         </li>}
-                    <li className="list" >
+                    <li className="list1" >
                         <img src={Globle} width={23} /> <span>EN</span>
                     </li>
                     <li className="list">

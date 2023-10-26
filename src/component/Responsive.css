@@ -1,8 +1,312 @@
-@media screen and (max-width:950px) {
-   body{
-    background-color: red;
-   } 
-   .container1{
-    
+@media screen and (max-width:1100px) {
+   .container3 {
+      margin-bottom: -10rem;
    }
+
+   .container3 .card01 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 63%;
+      height: auto;
+      position: absolute;
+      top: -15rem;
+      left: 5rem;
+      /* bottom: 3rem; */
+      margin: 6px;
+
+   }
+
+   .container7 .card2 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 63%;
+      height: auto;
+      position: absolute;
+      top: -5rem;
+      left: 5rem;
+      /* bottom: 3rem; */
+      margin: 6px;
+
+   }
+
+   .container5 .mobile p {
+      margin: 5rem 0 2rem 4rem;
+      font-size: 1.3rem;
+   }
+
+
+   .container5 .mobile1 {
+      background-color: #D70F64;
+      margin: 3rem;
+      width: 94%;
+      height: 59vh;
+      position: relative;
+
+   }
+
+}
+
+@media screen and (max-width:900px) {
+   .container3 .card01 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 80%;
+      display: block;
+      margin: auto;
+      height: auto;
+      position: absolute;
+      top: -19rem;
+      left: 5rem;
+      margin: 6px;
+
+   }
+
+   .container7 .card2 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 73%;
+      height: auto;
+      position: absolute;
+      top: -12rem;
+      left: 5rem;
+      /* bottom: 3rem; */
+
+
+   }
+
+   .container5 .mobilePic img {
+      width: 65%;
+      height: auto;
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 20rem;
+      right: 3.9rem;
+   }
+
+   .container5 .mobile1 {
+      background-color: #D70F64;
+      margin-left: 1.5rem;
+      width: 94%;
+      height: 100vh;
+      position: relative;
+   }
+
+   .container5 .mobile .qrcode {
+      width: 100%;
+   }
+
+   .container5 .mobile1 .qrcode img {
+      display: none;
+   }
+
+   .container5 .mobile .qrcode p {
+      display: block;
+      margin-left: -4rem;
+      font-size: 0.8rem;
+      width: 100%;
+   }
+
+   .container5 .mobile p {
+      margin: 3rem 0 2rem 4rem;
+      font-size: 1.1rem;
+      display: block;
+      margin: auto;
+      text-align: center;
+   }
+
+   .container5 .mobile1 .app {
+      position: absolute;
+      top: 12rem;
+      left: 5rem;
+   }
+
+   .container5 .mobile1 .app button {
+      padding: 10px;
+      margin: 10px;
+      background-color: black;
+      color: white;
+      outline: none;
+      border-radius: 0.4rem;
+      border: 1px solid white;
+   }
+
+   .container4 .location p {
+      margin: 1rem 0 1rem 9rem;
+      font-size: 1.4rem;
+
+   }
+   .footer img {
+      position: absolute;
+      top: -1.1rem;
+      width: 15%;
+    
   }
+
+}
+
+@media screen and (max-width:700px) {
+   .container3 .card01 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 80%;
+      display: block;
+      margin: auto;
+      height: auto;
+      position: absolute;
+      top: -21rem;
+      left: 3rem;
+   }
+
+   .container7 .card2 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 93%;
+      height: auto;
+      position: absolute;
+      top: -19rem;
+      left: 0.6rem;
+      /* bottom: 3rem; */
+
+
+   }
+
+   .container2 .hero p {
+      margin: 3rem 0 2rem 2rem;
+      font-size: 1rem;
+   }
+
+   .container5 .mobile1 {
+      background-color: #D70F64;
+      margin-left: 1.1rem;
+      width: 94%;
+      height: 95vh;
+      position: relative;
+   }
+
+   .container5 .mobilePic img {
+      width: 65%;
+      height: auto;
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 25rem;
+      right: 3.9rem;
+   }
+
+   .container5 .mobile .app {
+      position: absolute;
+      top: 14rem;
+      left: 2rem;
+   }
+
+   .container5 .mobile1 .app button {
+      padding: 8px;
+      margin: 10px;
+      background-color: black;
+      color: white;
+      outline: none;
+      border-radius: 0.4rem;
+      border: 1px solid white;
+   }
+
+   .container4 .location p {
+      display: block;
+      margin: auto;
+      text-align: center;
+      font-size: 1.5rem;
+
+   }
+   .footer img {
+      position: absolute;
+      top: -0.7rem;
+      width: 15%;
+     
+  }
+
+
+}
+
+@media screen and (max-width:430px) {
+   .container3 .card01 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 100%;
+      display: block;
+      margin: auto;
+      height: auto;
+      position: absolute;
+      top: -27rem;
+      left: -0.1rem;
+      font-size: 1rem;
+   }
+
+   .container5 .mobile1 {
+      background-color: #D70F64;
+      margin-left: 1rem;
+      width: 94%;
+      height: 80vh;
+      position: relative;
+   }
+
+   .container4 .location p {
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   .container3 {
+      margin-bottom: -19rem;
+   }
+}
+
+
+
+
+
+
+
+
+/* <<<<<<<<<<<<<------------------->>>>>>>>>>>>>>>>>>> */
+
+
+@media screen and (max-width:700px) {
+
+   .container1 .main1 p {
+      font-size: 1.7rem;
+
+   }
+
+}
+
+@media screen and (max-width:450px) {
+   .container1 .main img {
+      display: block;
+      margin: auto;
+      width: 80%;
+
+   }
+
+   .container1 .conta2 {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .container7 .card2 {
+      padding: 1rem 2rem 1rem 2rem;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: -26rem;
+      left: 0.3rem;
+      /* bottom: 3rem; */
+
+
+   }
+
+   .container1 .main1 p {
+      font-size: 1rem;
+      display: block;
+      margin-right: 2rem;
+
+   }
+
+   .container6 .office p {
+      margin: 0.1rem 0 4rem 2rem;
+      font-size: 1.3rem;
+
+   }
+
+}
