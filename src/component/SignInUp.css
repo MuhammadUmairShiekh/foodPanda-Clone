@@ -5,27 +5,30 @@
     text-align: center;
     color: #D70F64;
     font-weight: 700;
+    overflow: hidden;
 
 }
-.logo1{
+
+.logo1 {
     position: absolute;
     top: -2rem;
 }
+
 .form {
     position: relative;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
     /* background: rgb(15, 23, 36); */
+    overflow: hidden;
     background: #fff;
     padding: 1.5rem 1rem;
     width: 390px;
     height: auto;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-    margin: 3rem auto  3rem;
+    margin: 3rem auto 3rem;
 
 }
 
@@ -35,6 +38,7 @@
     justify-content: center;
     /* align-items: center; */
     /* background: rgb(15, 23, 36); */
+    overflow: hidden;
     background: #fff;
     padding: 1.5rem 1rem;
     width: 390px;
@@ -77,6 +81,7 @@
     width: 100%;
     text-decoration: none;
 }
+
 .form .login1 {
     outline: none;
     border: none;
@@ -98,6 +103,7 @@
     background: #d70f6292;
     cursor: pointer;
 }
+
 .form .login1:hover {
     background: #f4b300b0;
     cursor: pointer;
@@ -136,4 +142,14 @@
 .form .create-account:hover {
     background: #03ad06cb;
     cursor: pointer;
+}
+
+@media screen and (max-width:450px) {
+    .form {
+
+        overflow: hidden;
+        width: 340px;
+        margin: 10px;
+    }
+
 }

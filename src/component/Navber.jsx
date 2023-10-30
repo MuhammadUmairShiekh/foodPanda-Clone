@@ -73,12 +73,12 @@ function Navber() {
                             <button onClick={handleSignOut} >Logout</button>
 
                         </li>}
-                    <li className="list1" >
+                    {/* <li className="list1" >
                         <img src={Globle} width={23} /> <span>EN</span>
-                    </li>
-                    <li className="list">
+                    </li> */}
+                    {/* <li className="list">
                         <img src={ShopingBag} width={25} />
-                    </li>
+                    </li> */}
                 </ul>
                 <Outlet />
             </div>

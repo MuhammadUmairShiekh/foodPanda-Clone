@@ -15,11 +15,14 @@ import Card from "./Card";
 import './Responsive.css';
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
+import { postRestaurants } from "../config.js/firebase";
+
 
 function Body() {
+
+   
     return (
         <>
-
             <div className="container1" >
                 <div className="conta2">
                     <div className="main">
@@ -70,7 +73,7 @@ function Body() {
                     </div>
                 </div>
             </div>
-
+                {/* <button onClick={postData}>postData</button> */}
             <div className="container4">
                 <div className="location">
                     <div>
@@ -81,13 +84,13 @@ function Body() {
                 </div>
                 <div className="cardList">
                     <NavLink to={"/city"}> <Card image={karachi} button={"karachi"} /></NavLink>
-                    <Card image={Hyderabad} button={"Hyderabad"} />
-                    <Card image={Peshawar} button={"Peshawar"} />
+                    <Card image={Hyderabad} button={"Coming-Soon"} />
+                    <Card image={Peshawar} button={"Coming-Soon"} />
                 </div>
                 <div className="cardList">
-                    <Card image={islamabad} button={"Islamabad"} />
-                    <Card image={multan} button={"Multan"} />
-                    <Card image={faisalabad} button={"Faisalabad"} />
+                    <Card image={islamabad} button={"Coming-Soon"} />
+                    <Card image={multan} button={"Coming-Soon"} />
+                    <Card image={faisalabad} button={"Coming-Soon"} />
                 </div>
             </div>
             <div className="container5">

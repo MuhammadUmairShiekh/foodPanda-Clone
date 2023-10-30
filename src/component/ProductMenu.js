@@ -3,6 +3,8 @@ import ProductNav from "./ProductNav";
 import { useState, useEffect } from "react";
 import { getData } from "../config.js/firebase";
 import ProductCard from "./ProductCard";
+import biryani from '../Images/biryani2 (2).jpg'
+import Footer from "./Footer";
 
 function ProductMenu() {
     const [res, setRes] = useState([])
@@ -28,14 +30,14 @@ function ProductMenu() {
 
                 {
                     res.map(item => {
-                        return <ProductCard tittle={item.tittle} btn1={"Buy Me"}  images={item.image} btn={item.id}  />
+                        return <ProductCard tittle={item.restaurant_name} btn1={"Check Me"} city={item.cuisine_type}  images={biryani} btn={item.id}  />
                     })
                 }
 
             </div>
 
 
-
+<Footer />
         </>
     )
 }

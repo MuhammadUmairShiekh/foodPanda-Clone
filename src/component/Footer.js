@@ -6,7 +6,7 @@ function Footer() {
 
         <>
         <div  className="footer">
-            <p>All Rights Reserved CopyRight2023  <img src={foodPanda}  /> </p>
+            <p>All Rights Reserved CopyRight2023 </p>
             {/* <span><img src={foodPanda}  /></span> */}
          </div>  
         </>

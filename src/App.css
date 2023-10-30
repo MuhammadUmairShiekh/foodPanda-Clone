@@ -6,10 +6,10 @@
 
 }
 
-body{
+body {
   /* overflow-y: hidden; */
   overflow-x: hidden;
-  
+
 }
 
 .nav {
@@ -22,6 +22,9 @@ body{
   z-index: 1;
   position: sticky;
   top: 0;
+  padding: 2rem;
+  /* overflow-x: hidden; */
+
 
 
 }
@@ -39,6 +42,7 @@ body{
 
 }
 
+/* 
 .nav ul .user img {
   position: absolute;
   top: 1.2rem;
@@ -48,21 +52,22 @@ body{
   padding: 0.4rem;
   border-radius: 50%;
   display: none;
-}
+} */
 
 .nav ul .logo img {
   position: absolute;
-  top: -2rem;
-  left: -1rem;
-  width: 13rem;
+  top: -1.4rem;
+  left: 3rem;
+  width: 12.3rem;
+  /* filter: invert(1); */
 }
 
-.nav ul .list {
+/* .nav ul .list {
    margin: 1.6rem 4rem 1rem 0rem;
 }
 .nav ul .list1 {
   margin: 1.7rem 4rem 1rem 0rem;
-}
+} */
 
 .nav ul .list1 span {
   /* background-color: red; */
@@ -87,7 +92,7 @@ body{
   font-weight: 600;
   position: absolute;
   top: 0.5rem;
-  right: 16rem;
+  right: 7rem;
 
 }
 
@@ -98,15 +103,9 @@ body{
   font-weight: 600;
   position: absolute;
   top: 1.3rem;
-  right: 12rem;
+  right: 1rem;
 }
-.nav ul .location{
-  position: absolute;
-  top: 1.5rem;
-  font-weight: 600;
-  color: #D70F64;
-  left: 35rem;
-}
+
 .nav ul li:hover button {
   transform: scale(1.1);
   cursor: pointer;
@@ -118,7 +117,7 @@ body{
   .nav ul .signUpBtn {
     display: none;
   }
-      
+
   .nav ul .user img {
     position: absolute;
     top: 1.2rem;
@@ -129,31 +128,35 @@ body{
     border-radius: 50%;
     display: block;
   }
-  
+
   .nav ul .logo img {
     width: 10rem;
     position: absolute;
     top: -0.9rem;
 
-    
-    
-   
+
+
+
   }
+
   .nav ul .loginBtn button {
     position: absolute;
     top: 1.3rem;
     right: 3rem;
   }
-  .nav ul .list1 span  {
-    display: none;
- }
- .nav ul .list1 img{
-    display: none
- }
- .nav ul .list{
-  margin: 1.6rem 0.3rem 1rem 0rem;
 
- }
+  .nav ul .list1 span {
+    display: none;
+  }
+
+  .nav ul .list1 img {
+    display: none
+  }
+
+  .nav ul .list {
+    margin: 1.6rem 0.3rem 1rem 0rem;
+
+  }
 }
 
 
@@ -167,13 +170,14 @@ body{
   background-color: #F7F7F7;
 
 }
-.container1 .conta2{
+
+.container1 .conta2 {
   display: flex;
   justify-items: flex-end;
-   flex-direction: row-reverse; 
+  flex-direction: row-reverse;
   align-items: center;
-  
-  
+
+
 
 }
 
@@ -181,49 +185,49 @@ body{
   width: 100%;
   display: flex;
   justify-self: end;
-  align-items: flex-end; 
+  align-items: flex-end;
   margin-left: 22rem;
-  }
-
-.container1 .main1 {
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-end;
-flex-wrap: wrap;
 }
 
-.container1 .main1 p { 
+.container1 .main1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.container1 .main1 p {
   color: rgba(31, 31, 31, 0.951);
   font-size: 2.7rem;
   width: 100%;
   margin-right: -3rem;
 }
 
-.container1  .mainInput {
+.container1 .mainInput {
   background-color: #ffffff6f;
   width: 50%;
   box-shadow: 0px 0px 7px 0px rgba(76, 74, 74, 0.347);
   padding: 0.9rem;
   border-radius: 10px;
-  
+
 
 }
 
 .container1 .mainInput .mainInput1 {
   width: 100%;
   display: flex;
-  
-  
+
+
 }
 
-.container1  .mainInput .mainInput1 input {
+.container1 .mainInput .mainInput1 input {
   width: 100%;
   outline: none;
   border: 1px solid lightgray;
   padding: 16px;
   border-radius: 5px;
-  
+
 }
 
 .container1 .mainInput .mainInput1 button {
@@ -240,7 +244,7 @@ flex-wrap: wrap;
   padding: 14px;
   transition: 0.3s ease-in-out;
   width: 30%;
-  
+
 }
 
 .container1 .main1 .mainInput .mainInput1 button:hover {
@@ -254,11 +258,11 @@ flex-wrap: wrap;
   height: 100vh;
 }
 
-  .container2 .hero p {
-    margin: 5rem 0 2rem 4rem;
-    font-size: 2rem;
+.container2 .hero p {
+  margin: 5rem 0 2rem 4rem;
+  font-size: 2rem;
 
-  }
+}
 
 .container2 .hero1 {
   width: 100%;
@@ -353,14 +357,15 @@ flex-wrap: wrap;
   /* height: auto; */
   position: relative;
   overflow: hidden;
- 
+
 }
 
 .container5 .mobile p {
   margin: 5rem 0 2rem 4rem;
   font-size: 2rem;
 }
-.container5 .mobilePic img{
+
+.container5 .mobilePic img {
   width: 45%;
   height: 76vh;
   position: absolute;
@@ -368,7 +373,7 @@ flex-wrap: wrap;
   right: 0.2rem;
 }
 
-.container5 .mobile1{
+.container5 .mobile1 {
   background-color: #D70F64;
   margin: 3rem;
   width: 94%;
@@ -376,14 +381,16 @@ flex-wrap: wrap;
   border-radius: 0.6rem;
   color: #fff;
   position: relative;
-  
+
 }
-.container5 .mobile1 .app{
+
+.container5 .mobile1 .app {
   position: absolute;
   top: 14rem;
   left: 3rem;
 }
-.container5 .mobile1 .app button{
+
+.container5 .mobile1 .app button {
   padding: 15px;
   margin: 10px;
   background-color: black;
@@ -391,31 +398,34 @@ flex-wrap: wrap;
   outline: none;
   border-radius: 0.4rem;
   border: 1px solid white;
-  
-  
+
+
 }
 
-.container5 .mobile1 img{
+.container5 .mobile1 img {
   width: 15%;
   height: 15%;
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 1rem;
-    
+
 }
-.container5 .mobile1> p:first-child{
+
+.container5 .mobile1>p:first-child {
   padding-top: 2rem;
-  
+
 }
-.container5 .mobile1 .qrcode{
+
+.container5 .mobile1 .qrcode {
   display: flex;
   width: 60%;
   margin: 2rem 0rem 0rem 3.8rem;
 }
-.container5 .mobile1 .qrcode p{
+
+.container5 .mobile1 .qrcode p {
   font-size: 1rem;
   margin: 10px 10px 0px 20px;
-  width: 60%; 
+  width: 60%;
   line-height: 1.8rem;
 
 }
@@ -442,6 +452,7 @@ flex-wrap: wrap;
   width: 100%;
   transform: scale(1.1);
 }
+
 .container7 {
   width: 100%;
   height: 50vh;
@@ -488,4 +499,3 @@ flex-wrap: wrap;
   transform: scale(1.1);
   cursor: pointer;
 }
-

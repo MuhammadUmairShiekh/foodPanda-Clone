@@ -6,6 +6,7 @@ import SignIN from "../component/SignIn";
 import Forget from "../component/Forget";
 import SentData from "./SentData";
 import ProductMenu from "../component/ProductMenu";
+import ProductDetail from "../component/ProductDetail";
 // import Body from "../component/Body";
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     {
         path: "/City",
         element: <ProductMenu />
+    },
+     {
+        path: "/City/:city_id",
+        element: <ProductDetail />
     },
 
 
