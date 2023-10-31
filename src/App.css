@@ -62,10 +62,10 @@ body {
   /* filter: invert(1); */
 }
 
-/* .nav ul .list {
-   margin: 1.6rem 4rem 1rem 0rem;
+.nav ul .list {
+   margin: 0rem 0.8rem -3rem 1rem;
 }
-.nav ul .list1 {
+/* .nav ul .list1 {
   margin: 1.7rem 4rem 1rem 0rem;
 } */
 
@@ -91,8 +91,8 @@ body {
   color: #D70F64;
   font-weight: 600;
   position: absolute;
-  top: 0.5rem;
-  right: 7rem;
+  top: 0.9rem;
+  right: 11rem;
 
 }
 
@@ -102,8 +102,8 @@ body {
   color: #fff;
   font-weight: 600;
   position: absolute;
-  top: 1.3rem;
-  right: 1rem;
+  top: 1.7rem;
+  right: 7rem;
 }
 
 .nav ul li:hover button {

@@ -5,6 +5,9 @@ import { useParams } from "react-router-dom";
 import biryani from '../Images/biryani2 (2).jpg'
 import ProductNav from './ProductNav';
 import Footer from './Footer';
+import { addCardToStore } from "../Store/card";
+import { useDispatch } from 'react-redux'
+
 
 
 
@@ -12,6 +15,7 @@ import Footer from './Footer';
 function ProductDetail() {
     const [detail, setDetail] = useState('')
     const { city_id } = useParams()
+    const dispatch = useDispatch()
     // console.log(city_id)
     useEffect(() => {
         resData()
@@ -23,16 +27,16 @@ function ProductDetail() {
         const resToData = await getIdData(city_id)
         setDetail(resToData)
     }
-
-    if (!detail) {
-        return <div className='loader' ></div>
-    }
-
-
     const { opening_hours, restaurant_name, phone, menu } = detail
     const open = []
     for (let key in opening_hours) {
         open.push(`${key}: ${opening_hours[key]}`)
+    }
+    const addToCard = (item) => {
+        dispatch(addCardToStore())
+    }
+    if (!detail) {
+        return <div className='loader' ></div>
     }
     return (
 
@@ -48,7 +52,11 @@ function ProductDetail() {
                     <ul className="menuList1">
                         {menu.map(item => {
                             return (
-                                <li>{item.item} {"Rs" + " " + item.price + " /-" } </li>
+                                <li> <img src={item.item_image_url} />
+                                    <p>{item.item}</p>
+                                    <p>{"Rs" + " " + item.price + " /-"}</p>
+                                    <button onClick={() => addToCard(item.item)} >Add To Card </button>
+                                </li>
                             )
                         })}
 
@@ -56,7 +64,7 @@ function ProductDetail() {
                 }
             />
 
-<Footer />
+            <Footer />
 
         </>
     )

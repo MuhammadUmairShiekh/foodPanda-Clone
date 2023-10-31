@@ -125,15 +125,19 @@ const restro_data = [
         "menu": [
             {
                 "item": "Chicken Biryani",
-                "price": 350
+                "price": 350,
+                "item_image_url": "im"
+                
             },
             {
                 "item": "Seekh Kebab",
-                "price": 200
+                "price": 200,
+                "item_image_url": "im"
             },
             {
                 "item": "Gulab Jamun",
-                "price": 80
+                "price": 80,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -159,15 +163,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Paneer Tikka",
-                "price": 250
+                "price": 250,
+                "item_image_url": "im"
             },
             {
                 "item": "Butter Chicken",
-                "price": 400
+                "price": 400,
+                "item_image_url": "im"
             },
             {
                 "item": "Rasmalai",
-                "price": 100
+                "price": 100,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -193,15 +200,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Naan",
-                "price": 40
+                "price": 40,
+                "item_image_url": "im"
             },
             {
                 "item": "Tandoori Chicken",
-                "price": 300
+                "price": 300,
+                "item_image_url": "im"
             },
             {
                 "item": "Gajar Halwa",
-                "price": 120
+                "price": 120,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -227,15 +237,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Grilled Fish",
-                "price": 400
+                "price": 400,
+                "item_image_url": "im"
             },
             {
                 "item": "Shrimp Scampi",
-                "price": 350
+                "price": 350,
+                "item_image_url": "im"
             },
             {
                 "item": "Lobster Bisque",
-                "price": 180
+                "price": 180,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -261,15 +274,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Mutton Korma",
-                "price": 280
+                "price": 280,
+                "item_image_url": "im"
             },
             {
                 "item": "Biryani",
-                "price": 320
+                "price": 320,
+                "item_image_url": "im"
             },
             {
                 "item": "Jalebi",
-                "price": 80
+                "price": 80,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -295,15 +311,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Sashimi Platter",
-                "price": 450
+                "price": 450,
+                "item_image_url": "im"
             },
             {
                 "item": "Tempura Udon",
-                "price": 350
+                "price": 350,
+                "item_image_url": "im"
             },
             {
                 "item": "Green Tea Ice Cream",
-                "price": 90
+                "price": 90,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -329,15 +348,19 @@ const restro_data = [
         "menu": [
             {
                 "item": "Margherita Pizza",
-                "price": 300
+                "price": 300,
+                "item_image_url": "im"
+
             },
             {
                 "item": "Pepperoni Pizza",
-                "price": 350
+                "price": 350,
+                "item_image_url": "im"
             },
             {
                 "item": "Tiramisu",
-                "price": 150
+                "price": 150,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -363,15 +386,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Falafel Wrap",
-                "price": 180
+                "price": 180,
+                "item_image_url": "im"
             },
             {
                 "item": "Hummus Plate",
-                "price": 150
+                "price": 150,
+                "item_image_url": "im"
             },
             {
                 "item": "Baklava",
-                "price": 70
+                "price": 70,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -397,15 +423,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Espresso",
-                "price": 120
+                "price": 120,
+                "item_image_url": "im"
             },
             {
                 "item": "Croissant",
-                "price": 80
+                "price": 80,
+                "item_image_url": "im"
             },
             {
                 "item": "Cheesecake",
-                "price": 150
+                "price": 150,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -431,15 +460,18 @@ const restro_data = [
         "menu": [
             {
                 "item": "Chapli Kebab",
-                "price": 250
+                "price": 250,
+                "item_image_url": "im"
             },
             {
                 "item": "Naan",
-                "price": 40
+                "price": 40,
+                "item_image_url": "im"
             },
             {
                 "item": "Kheer",
-                "price": 100
+                "price": 100,
+                "item_image_url": "im"
             }
         ],
         "opening_hours": {
@@ -478,3 +510,4 @@ export {
     signINWithGoogle,
     postRestaurants,
 }
+

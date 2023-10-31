@@ -15,7 +15,9 @@ function ProductPage(props) {
 						{/* <div className="author1"> DESCRIPTION: <br /> <span class="name "></span></div> */}
 						<div className="author1"> Order Now: <span class="name ">{mobile}</span></div>
 						{/* <div className="author1"> condition: <br /> <span class="name ">{condition}</span></div> */}
-						<div className="author1"> Location: <span class="name ">{Location}</span></div>
+						<div className="author1"> Location: <span class="name ">{Location}</span>
+						
+						</div>
 
 					</div>
 

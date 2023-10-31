@@ -19,7 +19,9 @@ import { postRestaurants } from "../config.js/firebase";
 
 
 function Body() {
-
+// const postData = () => {
+//     postRestaurants()
+// }
    
     return (
         <>

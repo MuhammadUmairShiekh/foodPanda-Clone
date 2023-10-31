@@ -5,16 +5,18 @@ import ShopingBag from '../Images/add-to-bag.png'
 import Globle from '../Images/globe.jpg'
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import Body from "./Body";
-import SentData from "../config.js/SentData";
-import { Login, auth } from "../config.js/firebase"
+import { auth } from "../config.js/firebase"
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2'
+import { useSelector } from 'react-redux'
+import Nav from "./Nav";
 
 function Navber() {
     const [log, setLog] = useState(false)
     const navigate = useNavigate()
     const [user, setUser] = useState()
+    const card = useSelector(state => state.card)
     useEffect(() => {
         onAuthStateChanged(auth, (users) => {
             if (users) {
@@ -45,7 +47,8 @@ function Navber() {
     }
     return (
         <>
-        
+            <Nav />
+
             <div className="nav">
                 <ul >
                     {/* <li className="user" >
@@ -76,13 +79,15 @@ function Navber() {
                     {/* <li className="list1" >
                         <img src={Globle} width={23} /> <span>EN</span>
                     </li> */}
-                    {/* <li className="list">
+                    <li className="list">
                         <img src={ShopingBag} width={25} />
-                    </li> */}
+                        {card}
+                    </li>
                 </ul>
-                <Outlet />
+               
+
             </div>
-            <Body />
+
             {/* <SentData /> */}
 
         </>
