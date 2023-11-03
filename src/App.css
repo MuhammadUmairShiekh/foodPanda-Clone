@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 
 }
 
 body {
-  /* overflow-y: hidden; */
+
   overflow-x: hidden;
 
 }
@@ -17,7 +16,6 @@ body {
   justify-content: right;
   position: relative;
   background-color: #fff;
-  /* box-shadow: 0px 0px 19px 10px rgba(30, 30, 30, 0.902); */
   box-shadow: 0px 0px 30px 1px rgba(54, 53, 53, 0.469);
   z-index: 1;
   position: sticky;
@@ -63,8 +61,9 @@ body {
 }
 
 .nav ul .list {
-   margin: 0rem 0.8rem -3rem 1rem;
+  margin: 0rem 0.8rem -3rem 1rem;
 }
+
 /* .nav ul .list1 {
   margin: 1.7rem 4rem 1rem 0rem;
 } */
@@ -167,7 +166,7 @@ body {
   /* flex-wrap: wrap; */
   overflow: hidden;
   position: relative;
-  background-color: #F7F7F7;
+  background-color: #ffff;
 
 }
 
@@ -201,7 +200,7 @@ body {
   color: rgba(31, 31, 31, 0.951);
   font-size: 2.7rem;
   width: 100%;
-  margin-right: -3rem;
+  margin-right: -2rem;
 }
 
 .container1 .mainInput {

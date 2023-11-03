@@ -7,6 +7,7 @@ import Forget from "../component/Forget";
 import SentData from "./SentData";
 import ProductMenu from "../component/ProductMenu";
 import ProductDetail from "../component/ProductDetail";
+import TotalItem from "../component/TotalItem";
 // import Body from "../component/Body";
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
     {
         path: "/Forget",
         element: <Forget />
+    },
+    {
+        path: "/TotalItem",
+        element: <TotalItem />
     },
     {
         path: "/AdminDataUmairShiekh",

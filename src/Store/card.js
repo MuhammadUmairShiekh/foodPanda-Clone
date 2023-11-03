@@ -1,16 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    card: 0,
+    card: [],
 }
 
 export const cardSlice = createSlice({
     name: 'card',
     initialState,
     reducers: {
-        addCardToStore: (state) => {
+        addCardToStore: (state , data) => {
 
-            state.card += 1
+            state.card.push(data.payload)
         },
         removeCardToStore: (state) => {
             state.card -= 1

@@ -15,7 +15,8 @@ function ProductNav() {
     const [log, setLog] = useState(false)
     const navigate = useNavigate()
     const [user, setUser] = useState()
-    const card = useSelector(state => state.card )
+    const card = useSelector(state => state.card)
+    // console.log(card)
     useEffect(() => {
         onAuthStateChanged(auth, (users) => {
             if (users) {
@@ -48,11 +49,7 @@ function ProductNav() {
         <>
             <div className="nav">
                 <ul >
-                    {/* <li className="user" >
-                        <NavLink>
-                            <img src={User} width={20} />
-                        </NavLink>
-                    </li> */}
+
                     <li className="logo" >
                         <NavLink>
                             <img src={foodPanda} />
@@ -73,8 +70,8 @@ function ProductNav() {
                         </li>}
 
                     <li className="list">
-                        <img src={ShopingBag} width={25} />
-                        {card}
+                    <NavLink to={"/TotalItem"} > <img src={ShopingBag} width={25} /> </NavLink >
+                        {card.length}
                     </li>
                 </ul>
 

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.tableList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+.tableList table{
+    border: 3px groove #D70F64;
+    width: 60%;
+    line-height: 40px;
+}
+.tableList table th ,td{
+    border: 2px groove black;
+}

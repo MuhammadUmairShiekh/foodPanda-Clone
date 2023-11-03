@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    /* background-color: #959898; */
 
-}
 
 .cardlist {
     position: relative;
@@ -56,7 +53,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     background-color: #fff;
-    
+
 
 }
 
@@ -81,8 +78,6 @@ body{
     border-radius: 10px;
     position: relative;
     display: flex;
-    /* flex-wrap: wrap;
-    flex-direction: column; */
     margin: auto;
     margin-top: 1rem;
     /* margin-bottom: 5rem; */
@@ -130,15 +125,16 @@ body{
     color: #FFF;
     font-weight: 600;
     margin-bottom: 5rem;
-    box-shadow: 0px 0px 10px 2px #161717;    
+    box-shadow: 0px 0px 10px 2px #161717;
 }
-.menuList h3{
+
+.menuList h3 {
     font-size: 3rem;
 }
 
 .menuList1 {
     list-style: none;
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
     /* flex-direction: row; */
     justify-content: space-between;
@@ -149,39 +145,44 @@ body{
     border-radius: 10px;
     text-align: center;
 }
-.menuList1 li{
+
+.menuList1 li {
     display: flex;
     flex-wrap: wrap;
     margin: 3rem;
     flex-direction: column;
 }
-.menuList1 button{
+
+.menuList1 button {
     padding: 15px;
     border: none;
     outline: none;
     background-color: #D70F64;
     color: #FFF;
     border-radius: 10px;
-    transition: 0.3s all;   
+    transition: 0.3s all;
     font-weight: 600;
     margin-left: 10px;
     cursor: pointer;
 
 
 }
-.menuList1 img{
+
+.menuList1 img {
     border-radius: 19px;
     transition: 0.4s ease-in-out;
     width: 100%;
-    height: 50%; 
-    box-shadow: 0px 0px 5px 1px #161717;    
+    height: 50%;
+    box-shadow: 0px 0px 5px 1px #161717;
 
-    
+
 }
+
 .menuList1 img:hover {
     transform: scale(1.1);
 }
-.menuList1 button:hover{
+
+.menuList1 button:hover {
     color: #c4e90d;
     font-weight: 600;
 }

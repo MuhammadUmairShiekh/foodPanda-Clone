@@ -1,20 +1,17 @@
 import React from "react";
 import foodPanda from '../Images/foodPanda Logo.png'
-import User from '../Images/user.png'
 import ShopingBag from '../Images/add-to-bag.png'
-import Globle from '../Images/globe.jpg'
-import { Outlet, NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Body from "./Body";
 import { auth } from "../config.js/firebase"
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2'
 import { useSelector } from 'react-redux'
-import Nav from "./Nav";
+
 
 function Navber() {
     const [log, setLog] = useState(false)
-    const navigate = useNavigate()
     const [user, setUser] = useState()
     const card = useSelector(state => state.card)
     useEffect(() => {
@@ -47,7 +44,7 @@ function Navber() {
     }
     return (
         <>
-            <Nav />
+
 
             <div className="nav">
                 <ul >
@@ -80,15 +77,16 @@ function Navber() {
                         <img src={Globle} width={23} /> <span>EN</span>
                     </li> */}
                     <li className="list">
-                        <img src={ShopingBag} width={25} />
-                        {card}
+                      <NavLink to={"/TotalItem"} > <img src={ShopingBag} width={25} /></NavLink>
+                        {card.length}
                     </li>
                 </ul>
-               
+
 
             </div>
 
-            {/* <SentData /> */}
+            <Body />
+
 
         </>
     )

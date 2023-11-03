@@ -16,14 +16,12 @@ function ProductDetail() {
     const [detail, setDetail] = useState('')
     const { city_id } = useParams()
     const dispatch = useDispatch()
-    // console.log(city_id)
     useEffect(() => {
         resData()
 
     }, [])
 
     const resData = async () => {
-        // getIdData(city_id)
         const resToData = await getIdData(city_id)
         setDetail(resToData)
     }
@@ -33,10 +31,11 @@ function ProductDetail() {
         open.push(`${key}: ${opening_hours[key]}`)
     }
     const addToCard = (item) => {
-        dispatch(addCardToStore())
+        dispatch(addCardToStore(item))
+        // console.log(dispatch)
     }
     if (!detail) {
-        return <div className='loader' ></div>
+        return <div className='loader'></div>
     }
     return (
 
@@ -55,7 +54,7 @@ function ProductDetail() {
                                 <li> <img src={item.item_image_url} />
                                     <p>{item.item}</p>
                                     <p>{"Rs" + " " + item.price + " /-"}</p>
-                                    <button onClick={() => addToCard(item.item)} >Add To Card </button>
+                                    <button onClick={() => addToCard(item)} >Add To Card </button>
                                 </li>
                             )
                         })}
