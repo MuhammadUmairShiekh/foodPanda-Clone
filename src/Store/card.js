@@ -12,8 +12,8 @@ export const cardSlice = createSlice({
 
             state.card.push(data.payload)
         },
-        removeCardToStore: (state) => {
-            state.card -= 1
+        removeCardToStore: (state , data) => {
+            state.card.splice(data.payload, 1)
         }
     },
 })

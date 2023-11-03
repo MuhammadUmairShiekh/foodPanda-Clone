@@ -1,9 +1,7 @@
 import React from "react";
 import foodPanda from '../Images/foodPanda Logo.png'
-import User from '../Images/user.png'
 import ShopingBag from '../Images/add-to-bag.png'
-import { Outlet, NavLink, useNavigate } from "react-router-dom";
-import Body from "./Body";
+import {  NavLink} from "react-router-dom";
 import { auth } from "../config.js/firebase"
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react';
@@ -13,10 +11,9 @@ import { useSelector } from 'react-redux'
 
 function ProductNav() {
     const [log, setLog] = useState(false)
-    const navigate = useNavigate()
     const [user, setUser] = useState()
     const card = useSelector(state => state.card)
-    // console.log(card)
+
     useEffect(() => {
         onAuthStateChanged(auth, (users) => {
             if (users) {
@@ -70,14 +67,14 @@ function ProductNav() {
                         </li>}
 
                     <li className="list">
-                    <NavLink to={"/TotalItem"} > <img src={ShopingBag} width={25} /> </NavLink >
+                        <NavLink to={"/TotalItem"} > <img src={ShopingBag} width={25} /> </NavLink >
                         {card.length}
                     </li>
                 </ul>
 
             </div>
 
-            {/* <SentData /> */}
+            
 
         </>
     )
