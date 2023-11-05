@@ -7,6 +7,8 @@ import ProductNav from './ProductNav';
 import Footer from './Footer';
 import { addCardToStore } from "../Store/card";
 import { useDispatch } from 'react-redux'
+import Swal from 'sweetalert2'
+
 
 
 
@@ -30,8 +32,20 @@ function ProductDetail() {
     for (let key in opening_hours) {
         open.push(`${key}: ${opening_hours[key]}`)
     }
+
+    // for (let i in menu_categories) {
+    //     menu_categories.category_name[i].items
+    //     console.log(menu_categories.category_name[i].items
+    //     )
+    // }
+
     const addToCard = (item) => {
         dispatch(addCardToStore(item))
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
         // console.log(dispatch)
     }
     if (!detail) {

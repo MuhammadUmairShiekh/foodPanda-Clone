@@ -30,7 +30,7 @@ function ProductMenu() {
 
                 {
                     res.map(item => {
-                        return <ProductCard tittle={item.restaurant_name} city={item.cuisine_type}  images={biryani} btn={item.id}  />
+                        return <ProductCard tittle={item.restaurant_name} city={item.cuisine_type}  images={item.address.topImages} btn={item.id}  />
                     })
                 }
 
