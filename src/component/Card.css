@@ -85,6 +85,11 @@
 
 }
 
+.listies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .resto {
     display: flex;
@@ -261,9 +266,8 @@
 
 .heading {
     font-weight: 600;
-    color: #FFff;
-    padding: 7px;
-    /* margin-right: 4rem; */
+    color: #FFF;
+    padding: 17px;    
     line-height: 2.3rem;
     position: relative;
     width: 40%;
@@ -274,14 +278,14 @@
 }
 
 .author {
-    color: white;
+    color: #FFF;
     font-weight: 400;
     font-size: 11px;
     padding-top: 20px;
 }
 
 .author2 {
-    color: white;
+    color: #FFF;
     font-weight: 400;
     font-size: 15px;
     padding-top: 20px;
@@ -296,18 +300,7 @@
 
 }
 
-.name {
-    font-weight: 400;
-    color: #c4e90d;
 
-}
-
-.name1 {
-    font-weight: 600;
-    font-size: 15px;
-    color: #FFF;
-
-}
 
 .name:hover {
     cursor: pointer;

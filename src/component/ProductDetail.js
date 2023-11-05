@@ -44,7 +44,7 @@ function ProductDetail() {
 
             <ProductPage tittle={restaurant_name} city={detail.address.city}
                 mobile={phone} Location={detail.address.street}
-                images={biryani}
+                // images={biryani}
                 timeing={open.map(item => <p>{item}</p>)}
                 menuCard={
 

@@ -1,0 +1,61 @@
+/* Footer.css */
+.footer {
+    background-color: #D70F64;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.address {
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    color: #D70F64;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Add more CSS for styling as needed */

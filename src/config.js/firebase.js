@@ -29,7 +29,7 @@ async function signINWithGoogle() {
         const name1 = result.user.name;
 
         localStorage.setItem("email", email)
-        localStorage.setItem("email", name1 )
+        localStorage.setItem("email", name1)
 
     } catch (e) {
 
@@ -127,7 +127,7 @@ const restro_data = [
                 "item": "Chicken Biryani",
                 "price": 350,
                 "item_image_url": "im"
-                
+
             },
             {
                 "item": "Seekh Kebab",
@@ -486,11 +486,217 @@ const restro_data = [
     }
 ]
 
+const restro_data1 = [
+    {
+        "restaurant_name": "Karachi Biryani House",
+        "cuisine_type": "Pakistani",
+        "address": {
+            "street": "456 Food Street",
+            "city": "Karachi",
+            "state": "SD",
+            "postal_code": "78901"
+        },
+        "phone": "555-789-1234",
+        "image_url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "menu_categories": [
+            {
+                "category_name": "Starters",
+                "items": [
+                    {
+                        "item": "Chicken Samosa",
+                        "price": 150,
+                        "item_image_url": "https://example.com/chicken_samosa.jpg&quot",
+                    },
+                    {
+                        "item": "Vegetable Pakora",
+                        "price": 120,
+                        "item_image_url": "https://example.com/vegetable_pakora.jpg&quot",
+                    }
+                ]
+            },
+            {
+                "category_name": "Main Courses",
+                "items": [
+                    {
+                        "item": "Chicken Biryani",
+                        "price": 350,
+                        "item_image_url": "https://example.com/chicken_biryani.jpg&quot",
+                    },
+                    {
+                        "item": "Beef Karahi",
+                        "price": 300,
+                        "item_image_url": "https://example.com/beef_karahi.jpg&quot",
+                    }
+                ]
+            },
+            {
+                "category_name": "Desserts",
+                "items": [
+                    {
+                        "item": "Gulab Jamun",
+                        "price": 80,
+                        "item_image_url": "https://example.com/gulab_jamun.jpg&quot",
+                    },
+                    {
+                        "item": "Kheer",
+                        "price": 100,
+                        "item_image_url": "https://example.com/kheer.jpg&quot",
+                    }
+                ]
+            }
+        ],
+        "opening_hours": {
+            "monday": "11:00 AM - 10:00 PM",
+            "tuesday": "11:00 AM - 10:00 PM",
+            "wednesday": "11:00 AM - 10:00 PM",
+            "thursday": "11:00 AM - 10:00 PM",
+            "friday": "11:00 AM - 11:00 PM",
+            "saturday": "12:00 PM - 11:00 PM",
+            "sunday": "12:00 PM - 9:00 PM"
+        }
+    },
+    {
+        "restaurant_name": "Spice of Lahore",
+        "cuisine_type": "Indian",
+        "address": {
+            "street": "789 Spice Avenue",
+            "city": "Karachi",
+            "state": "SD",
+            "postal_code": "56789"
+        },
+        "phone": "555-234-5678",
+        "image_url": "https://images.unsplash.com/photo-1616225273962-05c320ca73d2?auto=format&fit=crop&q=80&w=2128&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "menu_categories": [
+            {
+                "category_name": "Appetizers",
+                "items": [
+                    {
+                        "item": "Paneer Tikka",
+                        "price": 250,
+                        "item_image_url": "https://example.com/paneer_tikka.jpg&quot",
+                    },
+                    {
+                        "item": "Samosa Chaat",
+                        "price": 180,
+                        "item_image_url": "https://example.com/samosa_chaat.jpg&quot",
+                    }
+                ]
+            },
+            {
+                "category_name": "Main Courses",
+                "items": [
+                    {
+                        "item": "Butter Chicken",
+                        "price": 400,
+                        "item_image_url": "https://example.com/butter_chicken.jpg&quot",
+                    },
+                    {
+                        "item": "Dal Makhani",
+                        "price": 250,
+                        "item_image_url": "https://example.com/dal_makhani.jpg&quot",
+                    }
+                ]
+            },
+            {
+                "category_name": "Desserts",
+                "items": [
+                    {
+                        "item": "Rasmalai",
+                        "price": 100,
+                        "item_image_url": "https://example.com/rasmalai.jpg&quot",
+                    },
+                    {
+                        "item": "Gulab Jamun",
+                        "price": 80,
+                        "item_image_url": "https://example.com/gulab_jamun_indian.jpg&quot",
+                    }
+                ]
+            }
+        ],
+        "opening_hours": {
+            "monday": "12:00 PM - 9:00 PM",
+            "tuesday": "12:00 PM - 9:00 PM",
+            "wednesday": "12:00 PM - 9:00 PM",
+            "thursday": "12:00 PM - 9:00 PM",
+            "friday": "12:00 PM - 10:00 PM",
+            "saturday": "1:00 PM - 10:00 PM",
+            "sunday": "1:00 PM - 8:00 PM"
+        }
+    },
+    {
+        "restaurant_name": "Tandoori Delights",
+        "cuisine_type": "Indian",
+        "address": {
+            "street": "123 Tandoori Lane",
+            "city": "Karachi",
+            "state": "SD",
+            "postal_code": "45678"
+        },
+        "phone": "555-876-5432",
+        "image_url": "https://images.unsplash.com/photo-1628294896516-344152572ee8?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "menu_categories": [
+            {
+                "category_name": "Breads",
+                "items": [
+                    {
+                        "item": "Naan",
+                        "price": 40,
+                        "item_image_url": "https://example.com/naan.jpg&quot",
+                    },
+                    {
+                        "item": "Roti",
+                        "price": 30,
+                        "item_image_url": "https://example.com/roti.jpg&quot",
+                    }
+                ]
+            },
+            {
+                "category_name": "Grilled Delights",
+                "items": [
+                    {
+                        "item": "Tandoori Chicken",
+                        "price": 300,
+                        "item_image_url": "https://example.com/tandoori_chicken.jpg&quot",
+                    },
+                    {
+                        "item": "Seekh Kebab",
+                        "price": 250,
+                        "item_image_url": "https://example.com/seekh_kebab_tandoori.jpg&quot",
+                    }
+                ]
+            },
+            {
+                "category_name": "Desserts",
+                "items": [
+                    {
+                        "item": "Gulab Jamun",
+                        "price": 80,
+                        "item_image_url": "https://example.com/gulab_jamun_tandoori.jpg&quot",
+                    },
+                    {
+                        "item": "Kulfi",
+                        "price": 90,
+                        "item_image_url": "https://example.com/kulfi.jpg&quot",
+                    }
+                ]
+            }
+        ],
+        "opening_hours": {
+            "monday": "12:00 PM - 8:00 PM",
+            "tuesday": "12:00 PM - 8:00 PM",
+            "wednesday": "12:00 PM - 8:00 PM",
+            "thursday": "12:00 PM - 8:00 PM",
+            "friday": "12:00 PM - 9:00 PM",
+            "saturday": "1:00 PM - 9:00 PM",
+            "sunday": "1:00 PM - 7:00 PM"
+        }
+    }
+]
 
 function postRestaurants() {
     try {
-        for (var i = 0; i < restro_data.length; i++) {
-            addDoc(collection(db, "restaurants"), restro_data[i])
+        for (var i = 0; i < restro_data1.length; i++) {
+            addDoc(collection(db, "newRestaurants"), restro_data1[i])
         }
     } catch (e) {
         Swal.fire(e.message)

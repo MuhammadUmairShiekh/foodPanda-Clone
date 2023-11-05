@@ -8,7 +8,7 @@
 
 .tableList {
     width: 100%;
-    margin: auto;
+    margin:  0px auto 19rem auto;
     min-height: 60vh;
     text-align: center;
     /* margin-top: 4rem;
@@ -16,19 +16,25 @@
 }
 
 .tableList table {
+    
     width: 70%;
     line-height: 40px;
-    background-color: gray;
+    background-color: #D70F64;
+    border-radius: 0.5rem;
     /* margin: 10px; */
-    margin: auto;
+    margin: 2rem auto 2rem auto;
 }
 
 .tableList table th {
-    color: #D70F64;
+    color: #fff;
     font-weight: 600;
+    /* border-bottom: 1px solid white; */
+}
+.tableList table td  {
+    color: #fff;
 }
 
-.tableList table th img {
+.tableList table td img {
     width: 80px;
     height: 70px;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.512);
@@ -41,7 +47,6 @@
     border: none;
     outline: none;
     background-color: #D70F64;
-
     border-radius: 50px;
     margin: 5px;
     transition: 0.4s all;
@@ -93,7 +98,6 @@
     position: absolute;
     top: 1rem;
     right:  20rem;
-    
     
 
 }
