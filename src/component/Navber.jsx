@@ -8,10 +8,14 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2'
 import { useSelector } from 'react-redux'
+import { tab } from "@testing-library/user-event/dist/tab";
+import MiniCard from "./MiniCard";
 
 
 function Navber() {
     const [log, setLog] = useState(false)
+    const [showCart, setShowCart] = useState(false)
+
     const [user, setUser] = useState()
     const card = useSelector(state => state.card)
     useEffect(() => {
@@ -76,9 +80,14 @@ function Navber() {
                     {/* <li className="list1" >
                         <img src={Globle} width={23} /> <span>EN</span>
                     </li> */}
-                    <li className="list">
-                      <NavLink to={"/TotalItem"} > <img src={ShopingBag} width={25} /></NavLink>
+                    <li onClick={() => setShowCart(!showCart)} className="list">
+
+                       <NavLink to={"/TotalItem"}> <img src={ShopingBag} width={25} /></NavLink>
                         {card.length}
+                        {showCart && <div>
+                            {/* <MiniCard /> */}
+                        </div>}
+
                     </li>
                 </ul>
 

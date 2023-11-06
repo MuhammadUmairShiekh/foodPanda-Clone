@@ -8,6 +8,7 @@ import SentData from "./SentData";
 import ProductMenu from "../component/ProductMenu";
 import ProductDetail from "../component/ProductDetail";
 import TotalItem from "../component/TotalItem";
+import CheckoutForm from "../component/CheckOut";
 // import Body from "../component/Body";
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         path: "/City",
         element: <ProductMenu />
     },
-     {
+    {
         path: "/City/:city_id",
         element: <ProductDetail />
     },
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
     {
         path: "/TotalItem",
         element: <TotalItem />
+    },
+    {
+        path: "/CheckOut",
+        element: <CheckoutForm />
     },
     {
         path: "/AdminDataUmairShiekh",

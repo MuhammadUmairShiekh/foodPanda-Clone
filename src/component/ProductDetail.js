@@ -8,6 +8,7 @@ import Footer from './Footer';
 import { addCardToStore } from "../Store/card";
 import { useDispatch } from 'react-redux'
 import Swal from 'sweetalert2'
+import 'animate.css';
 
 
 
@@ -42,10 +43,22 @@ function ProductDetail() {
     const addToCard = (item) => {
         dispatch(addCardToStore(item))
         Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
-        })
+            title: "Your Item Has Been Place",
+            showClass: {
+                popup: `
+                animate__animated
+                animate__fadeInUp
+                animate__faster
+              `
+            },
+            hideClass: {
+                popup: `
+                animate__animated
+                animate__fadeOutDown
+                animate__faster
+              `
+            }
+        });
         // console.log(dispatch)
     }
     if (!detail) {

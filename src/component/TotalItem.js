@@ -7,6 +7,9 @@ import { removeCardToStore } from "../Store/card";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import Footer from "./Footer";
+import { NavLink } from "react-router-dom";
+import CheckoutForm from "./CheckOut";
+import Swal from 'sweetalert2'
 
 function TotalItem() {
     // const [discount, setDiscount] = useState(false)
@@ -19,7 +22,25 @@ function TotalItem() {
     })
     const dispatch = useDispatch()
     const removeCard = (index) => {
-        dispatch(removeCardToStore(index))
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+                dispatch(removeCardToStore(index))
+
+            }
+        });
 
     }
     // if (total == 1000) {
@@ -30,7 +51,9 @@ function TotalItem() {
     return (
         <>
             <ProductNav />
+            <div className="bg">
             <div className="tableList">
+                <CheckoutForm />
                 <table>
                     <tr>
                         <th>
@@ -39,9 +62,9 @@ function TotalItem() {
                         <th>
                             PRODUCT NAME
                         </th>
-                        <th>
-                            Quantity
-                        </th>
+                        {/* <th>
+                                Quantity
+                            </th> */}
                         <th>
                             PRICE
                         </th>
@@ -55,10 +78,10 @@ function TotalItem() {
                                     {item.item}
 
                                 </td>
-                                <td>
-                                    {index + 1}
+                                {/* <td>
+                                        {index + 1}
 
-                                </td>
+                                    </td> */}
 
                                 <td>
                                     Rs. {item.price + ".00"}
@@ -71,32 +94,34 @@ function TotalItem() {
                         )
 
                     })}
+
+
+                    <div className="total">
+                        <div className="name">
+                            <p>Subtotal:</p>
+                            <p>SaleTax 11%:</p>
+                            <p>Delivery Charges</p>
+                            <p>Discount 2%:</p>
+                            <p>Grand Total:</p>
+                        </div>
+                        <div className="count">
+                            <p> Rs. {total + ".00"}  </p>
+                            <p> Rs. {`${total}` * 11 / 100 + ".00"}</p>
+                            <p>Free</p>
+                            <p> Rs. {`${total}` * 2 / 100 + ".00"} </p>
+                            {/* <p> 2% Discount above 1000 </p> */}
+                            {/* <p> Purchase above 1000 use awal 2% Discount</p>  */}
+                            <p> Rs. {Math.floor(total * 11 / 100 + total - `${total * 2 / 100}`) + ".00"}  </p>
+                            {/* <p> Rs. {Math.round(total * 11 / 100 + total)}  </p> */}
+                            {/* <NavLink to={"/CheckOut"}> <button>Checkout</button></NavLink> */}
+
+                        </div>
+
+                    </div>
                 </table>
-                <div className="total">
-                    <div className="name">
-                        <p>Subtotal:</p>
-                        <p>SaleTax 11%:</p>
-                        <p>Delivery Charges</p>
-                        <p>Discount 2%:</p>
-                        <p>Grand Total:</p>
-                    </div>
-                    <div className="count">
-                        <p> Rs. {total + ".00"}  </p>
-                        <p> Rs. {`${total}` * 11 / 100 + ".00"}</p>
-                        <p>Free</p>
-                        <p> Rs. {`${total}` * 2 / 100 + ".00"} </p>
-                        {/* <p> 2% Discount above 1000 </p> */}
-                        {/* <p> Purchase above 1000 use awal 2% Discount</p>  */}
-                        <p> Rs. {Math.floor(total * 11 / 100 + total - `${total * 2 / 100}`) + ".00"}  </p>
-                        {/* <p> Rs. {Math.round(total * 11 / 100 + total)}  </p> */}
-                    </div>
-
-
-                </div>
-
             </div>
-<Footer />
-
+            {/* <Footer /> */}
+            </div>
         </>
     )
 }

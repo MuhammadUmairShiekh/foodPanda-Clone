@@ -16,15 +16,17 @@ import './Responsive.css';
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import { postRestaurants } from "../config.js/firebase";
+import CheckoutForm from "./CheckOut";
 
 
 function Body() {
-// const postData = () => {
-//     postRestaurants()
-// }
-   
+    // const postData = () => {
+    //     postRestaurants()
+    // }
+
     return (
         <>
+
             <div className="container1" >
                 <div className="conta2">
                     <div className="main">
@@ -75,7 +77,7 @@ function Body() {
                     </div>
                 </div>
             </div>
-                {/* <button onClick={postData}>postData</button> */}
+            {/* <button onClick={postData}>postData</button> */}
             <div className="container4">
                 <div className="location">
                     <div>
@@ -158,7 +160,7 @@ function Body() {
                 </div>
             </div>
 
-                <Footer />
+            <Footer />
         </>
     )
 }
