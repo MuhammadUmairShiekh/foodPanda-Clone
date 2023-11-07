@@ -1,7 +1,7 @@
 import React from "react";
 import foodPanda from '../Images/foodPanda Logo.png'
 import ShopingBag from '../Images/add-to-bag.png'
-import {  NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { auth } from "../config.js/firebase"
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react';
@@ -28,20 +28,40 @@ function ProductNav() {
 
     }, [])
 
-
     const handleSignOut = async () => {
-        try {
-            await signOut(auth)
-            setLog(false)
-            setUser()
-            Swal.fire("Log Out")
+        Swal.fire({
+            title: "Are you sure You won Log Out",
+            // text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Log Out"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Log Out!",
+                    text: "Your Log Out successfully",
+                    icon: "success"
+                });
+                try {
+                    signOut(auth)
+                    setLog(false)
+                    setUser()
+                    // Swal.fire("Log Out")
 
 
-        } catch (e) {
-            Swal.fire(e.message)
+                } catch (e) {
+                    Swal.fire(e.message)
 
-        }
+                }
+
+            }
+        });
+
     }
+
+
     return (
         <>
             <div className="nav">
@@ -74,7 +94,7 @@ function ProductNav() {
 
             </div>
 
-            
+
 
         </>
     )

@@ -89,6 +89,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #fff;
+    color: #D70F64;
+    padding: 3rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
 }
 
 .resto {
@@ -266,7 +271,7 @@
 
 .heading {
     font-weight: 600;
-    color: #FFF;
+    color: #D70F64;
     padding: 17px;    
     line-height: 2.3rem;
     position: relative;
@@ -285,14 +290,14 @@
 }
 
 .author2 {
-    color: #FFF;
+    color: #D70F64;
     font-weight: 400;
     font-size: 15px;
     padding-top: 20px;
 }
 
 .author1 {
-    color: white;
+    color: #D70F64;
     font-weight: 400;
     font-size: 16px;
     padding-top: 20px;

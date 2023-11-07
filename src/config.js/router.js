@@ -9,6 +9,7 @@ import ProductMenu from "../component/ProductMenu";
 import ProductDetail from "../component/ProductDetail";
 import TotalItem from "../component/TotalItem";
 import CheckoutForm from "../component/CheckOut";
+import MiniCard from "../component/MiniCard";
 // import Body from "../component/Body";
 
 const router = createBrowserRouter([
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
     {
         path: "/CheckOut",
         element: <CheckoutForm />
+    },
+    {
+        path: "/MiniCard",
+        element: <MiniCard />
     },
     {
         path: "/AdminDataUmairShiekh",

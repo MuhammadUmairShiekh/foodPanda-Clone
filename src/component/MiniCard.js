@@ -5,6 +5,8 @@ import del from '../Images/bin.png'
 import { removeCardToStore } from "../Store/card";
 import { useDispatch } from "react-redux";
 import Footer from "./Footer";
+import Swal from 'sweetalert2'
+
 
 
 function MiniCard() {
@@ -13,8 +15,9 @@ function MiniCard() {
     let total = 0;
     card.map(item => {
         total += item.price
-
     })
+
+
     const dispatch = useDispatch()
     const removeCard = (index) => {
         dispatch(removeCardToStore(index))
@@ -23,11 +26,12 @@ function MiniCard() {
 
     return (
         <>
-            <div className="tableList1">
+
+            <div className="tableList">
                 <table>
                     <tr>
                         <th>
-                            ITEM
+                            S:No
                         </th>
                         <th>
                             PRODUCT NAME
@@ -40,7 +44,10 @@ function MiniCard() {
                     {card.map((item, index) => {
                         return (
                             <tr>
-                                <td><img src={item.item_image_url} /></td>
+                                <td>
+                                    {index + 1}
+                                </td>
+
 
                                 <td>
                                     {item.item}
@@ -52,18 +59,20 @@ function MiniCard() {
                                     Rs. {item.price + ".00"}
                                 </td>
 
-                                <button onClick={() => removeCard(index)} ><img src={del} /> </button>
+                                {/* <button onClick={() => removeCard(index)} ><img src={del} /> </button> */}
 
                             </tr>
 
                         )
 
                     })}
+
                 </table>
 
 
+
             </div>
-         
+
 
         </>
     )

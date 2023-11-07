@@ -34,18 +34,39 @@ function Navber() {
 
 
     const handleSignOut = async () => {
-        try {
-            await signOut(auth)
-            setLog(false)
-            setUser()
-            Swal.fire("Log Out")
+        Swal.fire({
+            title: "Are you sure You won Log Out",
+            // text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Log Out"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Log Out!",
+                    text: "Your Log Out successfully",
+                    icon: "success"
+                });
+                try {
+                    signOut(auth)
+                    setLog(false)
+                    setUser()
+                    // Swal.fire("Log Out")
 
 
-        } catch (e) {
-            Swal.fire(e.message)
+                } catch (e) {
+                    Swal.fire(e.message)
 
-        }
+                }
+
+            }
+        });
+
     }
+
+    
     return (
         <>
 
@@ -82,7 +103,8 @@ function Navber() {
                     </li> */}
                     <li onClick={() => setShowCart(!showCart)} className="list">
 
-                       <NavLink to={"/TotalItem"}> <img src={ShopingBag} width={25} /></NavLink>
+                        <NavLink to={"/TotalItem"}> <img src={ShopingBag} width={25} /></NavLink>
+                        {/* <img src={ShopingBag} width={25} /> */}
                         {card.length}
                         {showCart && <div>
                             {/* <MiniCard /> */}
