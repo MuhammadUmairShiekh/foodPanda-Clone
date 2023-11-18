@@ -24,7 +24,7 @@ function TotalItem() {
     const removeCard = (index) => {
         dispatch(removeCardToStore(index))
 
-       
+
 
     }
     // if (total == 1000) {
@@ -34,10 +34,9 @@ function TotalItem() {
 
     return (
         <>
-            <ProductNav />
-            <div className="bg">
+            {/* <ProductNav /> */}
+
             <div className="tableList">
-                <CheckoutForm />
                 <table>
                     <tr>
                         <th>
@@ -103,9 +102,11 @@ function TotalItem() {
 
                     </div>
                 </table>
+                <CheckoutForm />
+
             </div>
-            {/* <Footer /> */}
-            </div>
+
+
         </>
     )
 }

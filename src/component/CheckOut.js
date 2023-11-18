@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import './CheckoutForm.css';
+import Swal from 'sweetalert2'
+import 'animate.css';
+import { useNavigate } from 'react-router-dom';
 
 const CheckoutForm = () => {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,9 +24,27 @@ const CheckoutForm = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();    
     // Implement your form submission logic here, such as sending the order to a server.
-    console.log('Form Data:', formData);
+    Swal.fire({
+      title: "Your Has been Place",
+      showClass: {
+        popup: `
+          animate__animated
+          animate__fadeInUp
+          animate__faster
+        `
+        
+      },
+      hideClass: {
+        popup: `
+          animate__animated
+          animate__fadeOutDown
+          animate__faster
+        `
+      }
+    });
+    navigate("/")
   };
 
   return (
